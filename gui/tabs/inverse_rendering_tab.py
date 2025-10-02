@@ -252,8 +252,8 @@ class InverseRenderingTab(BaseTab):
         
         # Log the command for user reference
         logger.info("To run inverse rendering examples, execute in terminal:")
-        logger.info("  cd C:\\Users\\ErdemBayraktar\\Documents\\GitHub\\Public_codes\\Mitsuba_trials")
         logger.info("  python examples\\inverse_rendering_demo.py")
+        logger.info("  (Run from the project root directory)")
         
         # Emit log message to GUI
         self.log_message.emit(
