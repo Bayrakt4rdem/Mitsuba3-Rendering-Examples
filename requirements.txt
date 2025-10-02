@@ -1,14 +1,60 @@
-# Mitsuba 3 Learning Demo - Python Dependencies
+# Mitsuba 3 Render Studio - Python Dependencies
 # Install with: pip install -r requirements.txt
+# Compatible with Python 3.8-3.13
 
-# Core rendering engine
+# ============================================================
+# Core Rendering Engine
+# ============================================================
 mitsuba>=3.0.0
 
-# Numerical computing
-numpy>=1.20.0
+# ============================================================
+# GUI Framework (Required for GUI)
+# ============================================================
+PyQt6>=6.4.0
 
-# Visualization and plotting
-matplotlib>=3.3.0
+# ============================================================
+# Numerical Computing & Scientific
+# Using --only-binary flag compatible versions
+# ============================================================
+numpy>=1.26.0
 
-# Image processing
-Pillow>=8.0.0
+# ============================================================
+# Visualization & Plotting
+# ============================================================
+matplotlib>=3.8.0
+
+# ============================================================
+# Image Processing
+# ============================================================
+Pillow>=10.0.0
+
+# ============================================================
+# Logging & Utilities
+# ============================================================
+loguru>=0.6.0
+
+# ============================================================
+# Optional Dependencies (Uncomment if needed)
+# ============================================================
+# scipy>=1.7.0              # Advanced scientific computing
+# opencv-python>=4.5.0      # Computer vision
+# tqdm>=4.60.0              # Progress bars for CLI
+
+# ============================================================
+# Installation Notes
+# ============================================================
+# 1. Create virtual environment first:
+#    python -m venv mitsuba_venv
+#
+# 2. Activate it:
+#    Windows: .\mitsuba_venv\Scripts\Activate.ps1
+#    Linux/Mac: source mitsuba_venv/bin/activate
+#
+# 3. Install dependencies:
+#    pip install -r requirements.txt
+#
+# 4. Verify installation:
+#    python -c "import mitsuba; import PyQt6; print('✅ Ready!')"
+#
+# For detailed installation help, see INSTALLATION.md
+

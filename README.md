@@ -22,6 +22,97 @@ A collection of well-documented, educational examples to help you learn physical
 
 ## 🚀 Quick Start
 
+### ⚡ Automated Setup (Easiest!)
+
+Run the automated setup script - it handles everything:
+
+```powershell
+.\setup.ps1
+```
+
+**Or use the full path:**
+
+```powershell
+.\scripts\setup_environment.ps1
+```
+
+This will:
+- ✅ Create virtual environment
+- ✅ Install all dependencies (Mitsuba, PyQt6, etc.)
+- ✅ Verify installation
+- ✅ Launch the GUI
+
+**That's it! One command!** 🎉
+
+---
+
+### 🛠️ Manual Installation (Alternative)
+
+If you prefer manual setup:
+
+```powershell
+# 1. Create virtual environment
+python -m venv mitsuba_venv
+
+# 2. Activate it
+.\mitsuba_venv\Scripts\Activate.ps1
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Launch GUI
+python launch_gui.py
+```
+
+For detailed troubleshooting, see **[Installation Guide](docs/INSTALLATION.md)**
+
+---
+
+### 🎨 Launch the GUI
+
+After installation, launch anytime with:
+
+```powershell
+.\launch.ps1
+```
+
+**Or use the full path:**
+
+```powershell
+.\scripts\launch_gui.ps1
+```
+
+### 🎨 GUI Features
+
+The GUI provides an intuitive interface for learning Mitsuba 3:
+
+**Features:**
+- 🎛️ Interactive parameter controls
+- 📊 Real-time progress tracking
+- 🖼️ Built-in image viewer
+- 📝 Integrated log console
+- 🌑 Professional dark theme
+- 🎓 Progressive learning path
+
+**5 Scene Tabs:**
+1. 🔮 **Basic Scene** - Fundamentals
+2. 💎 **Materials Showcase** - 5 materials compared
+3. 💡 **Lighting Techniques** - Professional setups
+4. 🔬 **Glass & Transparency** - IOR, caustics
+5. 📦 **Cornell Box** - Global illumination
+
+**2 Experimental Tabs (WIP):**
+6. 🎨 **Custom Mesh** ⚠️ - Load OBJ/PLY/STL files (partially functional)
+7. 🔄 **Inverse Rendering** ℹ️ - Educational info + variant checker (examples in CLI)
+
+> ⚠️ **Note:** Custom Mesh and Inverse Rendering tabs are work-in-progress. See [TODO.md](TODO.md) for known issues and implementation status.
+
+**See:** [GUI User Guide](docs/gui/USER_GUIDE.md) for detailed usage instructions.
+
+---
+
+### 💻 Command Line Examples (Alternative)
+
 ### 1. Clone or Download
 
 ```bash
@@ -60,6 +151,7 @@ You should see a test render! ✨
 python examples/01_basic_scene.py
 
 # Or use the interactive launcher
+cd examples
 .\run_demo.ps1
 ```
 
@@ -78,11 +170,21 @@ python examples/01_basic_scene.py
 
 ## 📖 Documentation
 
-- **[Learning Roadmap](docs/LEARNING_ROADMAP.md)** - Complete 7-phase learning path
-- **[Examples Guide](examples/README.md)** - Detailed demo descriptions
-- **[Project Summary](docs/PROJECT_SUMMARY.md)** - Complete project overview
-- **[Contributing](CONTRIBUTING.md)** - How to contribute
-- **[GitHub Guide](docs/GITHUB_PUSH_GUIDE.md)** - Git workflow instructions
+### Quick Links
+- 📘 **[Quickstart Guide](docs/QUICKSTART.md)** - 5-minute setup guide
+- 🔧 **[Installation Guide](docs/INSTALLATION.md)** - Detailed setup & troubleshooting
+- 🎓 **[Learning Roadmap](docs/LEARNING_ROADMAP.md)** - Complete 7-phase learning path
+- 🎨 **[GUI User Guide](docs/gui/USER_GUIDE.md)** - How to use the GUI application
+- 💡 **[GUI Examples](docs/examples/GUI_EXAMPLES.md)** - Interactive scene examples explained
+- 💻 **[CLI Examples](docs/examples/CLI_EXAMPLES.md)** - Command-line demo descriptions
+
+### Project Information
+- 📋 **[Project Summary](docs/PROJECT_SUMMARY.md)** - Complete project overview
+- 🏗️ **[Code Structure](docs/STRUCTURE.md)** - Codebase organization
+- 🗂️ **[File Organization](docs/FILE_ORGANIZATION.md)** - Directory structure
+- 🤝 **[Contributing](CONTRIBUTING.md)** - How to contribute
+
+**See [docs/README.md](docs/README.md) for complete documentation index.**
 
 ## 🎯 Learning Path
 
@@ -251,7 +353,54 @@ Ways to contribute:
 - 🎨 Add new examples
 - 🔧 Fix issues
 
-## 📄 License
+## � Project Structure
+
+```
+Mitsuba3-Learning-Demos/
+├── docs/                          # 📚 All documentation
+│   ├── gui/                      # GUI-specific docs
+│   ├── examples/                 # Example documentation
+│   ├── INSTALLATION.md           # Setup guide
+│   ├── QUICKSTART.md            # Quick start
+│   └── README.md                 # Documentation index
+│
+├── scripts/                       # 🚀 Launcher scripts
+│   ├── setup_environment.ps1    # Automated setup
+│   ├── launch_gui.ps1           # GUI launcher
+│   └── run_examples.ps1         # Run CLI examples
+│
+├── gui/                          # 🎨 GUI application
+│   ├── core/                    # Main window, rendering
+│   ├── tabs/                    # Scene tab modules
+│   └── widgets/                 # Reusable UI components
+│
+├── gui_examples/                 # 💡 GUI scene generators
+│   ├── basic_scene.py           # Fundamentals
+│   ├── materials_showcase.py    # Material comparison
+│   ├── lighting_techniques.py   # Professional lighting
+│   ├── glass_demo.py            # Glass & transparency
+│   └── cornell_box.py           # Global illumination
+│
+├── examples/                     # 💻 CLI demo scripts
+│   ├── 00_quick_start.py        # Installation check
+│   ├── 01_basic_scene.py        # First render
+│   ├── 02_materials_showcase.py # Materials
+│   ├── 03_lighting_techniques.py# Lighting
+│   ├── 04_advanced_scene.py     # Complex scenes
+│   └── 05_cornell_box.py        # Classic scene
+│
+├── setup.ps1                     # 🔧 Quick setup wrapper
+├── launch.ps1                    # ▶️ Quick launch wrapper
+├── launch_gui.py                # Main GUI entry point
+├── requirements.txt             # Python dependencies
+└── README.md                    # This file
+```
+
+**See [docs/FILE_ORGANIZATION.md](docs/FILE_ORGANIZATION.md) for detailed explanations.**
+
+---
+
+## �📄 License
 
 This project is licensed under the MIT License - see [LICENSE](LICENSE) for details.
 

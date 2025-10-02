@@ -1,18 +1,74 @@
 # Documentation Index
 
-This directory contains comprehensive documentation for the Mitsuba 3 Learning Demos project.
+Welcome to the Mitsuba 3 Render Studio documentation!
 
-## 📚 Available Documentation
+## 📚 Quick Links
 
 ### Getting Started
+- **[Quickstart Guide](QUICKSTART.md)** - Get up and running in 5 minutes ⚡
+- **[Installation Guide](INSTALLATION.md)** - Detailed setup instructions 🔧
+- **[Learning Roadmap](LEARNING_ROADMAP.md)** - Progressive learning path 🎓
 
-- **[Learning Roadmap](LEARNING_ROADMAP.md)** - Complete 7-phase learning path from beginner to advanced
-- **[GitHub Push Guide](GITHUB_PUSH_GUIDE.md)** - Step-by-step instructions for pushing to GitHub
-- **[Git Commands](GIT_COMMANDS.md)** - Quick reference for common Git commands
+### GUI Documentation
+- **[GUI User Guide](gui/USER_GUIDE.md)** - How to use the GUI application 🎨
+- **[GUI Architecture](gui/ARCHITECTURE.md)** - GUI code structure 🏗️
+- **[Implementation Summary](gui/IMPLEMENTATION_SUMMARY.md)** - Development summary 📋
+- **[Examples Update](gui/EXAMPLES_UPDATE_SUMMARY.md)** - Latest example additions ⭐
 
-### Reference
+### Examples Documentation
+- **[GUI Examples](examples/GUI_EXAMPLES.md)** - Interactive GUI scene examples 💡
+- **[CLI Examples](examples/CLI_EXAMPLES.md)** - Command-line rendering examples 💻
 
-- **[Project Summary](PROJECT_SUMMARY.md)** - Complete overview of the project structure and contents
+### Project Information
+- **[Project Summary](PROJECT_SUMMARY.md)** - Project overview and goals 🎯
+- **[Code Structure](STRUCTURE.md)** - Codebase organization 📁
+- **[File Organization](FILE_ORGANIZATION.md)** - Directory structure explanation 🗂️
+
+## 🎯 What Should I Read?
+
+### I'm a New User
+1. Start with **[Quickstart Guide](QUICKSTART.md)**
+2. Read **[GUI User Guide](gui/USER_GUIDE.md)**
+3. Follow **[Learning Roadmap](LEARNING_ROADMAP.md)**
+4. Explore **[GUI Examples](examples/GUI_EXAMPLES.md)**
+
+### I Want to Understand the Code
+1. Check **[Project Summary](PROJECT_SUMMARY.md)**
+2. Read **[Code Structure](STRUCTURE.md)**
+3. Review **[GUI Architecture](gui/ARCHITECTURE.md)**
+
+### I'm Having Installation Issues
+1. See **[Installation Guide](INSTALLATION.md)**
+2. Check troubleshooting sections
+3. Review system requirements
+
+### I Want to Learn Rendering Concepts
+1. Read **[Learning Roadmap](LEARNING_ROADMAP.md)**
+2. Study **[GUI Examples](examples/GUI_EXAMPLES.md)**
+3. Work through examples progressively
+
+## 📖 Documentation Structure
+
+```
+docs/
+├── README.md                    # This file - documentation index
+├── QUICKSTART.md               # 5-minute quick start (to be moved here)
+├── INSTALLATION.md             # Detailed installation guide (to be moved here)
+├── LEARNING_ROADMAP.md         # Learning path for beginners
+├── PROJECT_SUMMARY.md          # Project overview
+├── STRUCTURE.md                # Code structure
+├── FILE_ORGANIZATION.md        # Directory organization
+│
+├── gui/                        # GUI-specific documentation
+│   ├── USER_GUIDE.md          # GUI user manual (to be moved here)
+│   ├── ARCHITECTURE.md        # GUI code architecture
+│   ├── IMPLEMENTATION_SUMMARY.md
+│   └── EXAMPLES_UPDATE_SUMMARY.md
+│
+└── examples/                   # Example documentation
+    ├── GUI_EXAMPLES.md        # Interactive examples (to be moved here)
+    └── CLI_EXAMPLES.md        # Command-line examples (to be moved here)
+```
 
 ## 📁 Local Notes
 
@@ -22,12 +78,11 @@ The `.local/` directory is for personal notes and is not committed to Git. Use i
 - Draft documentation
 - TODO lists
 
-See [.local/README.md](.local/README.md) for more information.
+## 🔗 Main Project Links
 
-## 🔗 Quick Links
-
-### Main Documentation
-- [Main README](../README.md) - Start here!
+- **[Main README](../README.md)** - Start here!
+- **[Contributing Guide](../CONTRIBUTING.md)** - How to contribute
+- **[License](../LICENSE)** - Project license
 - [Contributing Guidelines](../CONTRIBUTING.md) - How to contribute
 - [License](../LICENSE) - MIT License with Mitsuba attribution
 
