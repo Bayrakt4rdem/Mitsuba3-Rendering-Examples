@@ -1,0 +1,137 @@
+# ============================================
+# Virtual Environments
+# ============================================
+mitsuba_venv/
+venv/
+env/
+ENV/
+.venv/
+*.virtualenv
+
+# ============================================
+# Python
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ============================================
+# Rendered Output Files
+# ============================================
+output/
+renders/
+*.png
+*.jpg
+*.jpeg
+*.exr
+*.hdr
+*.tif
+*.tiff
+*.bmp
+
+# ============================================
+# Local Documentation (Not for Git)
+# ============================================
+docs/.local/
+docs/local/
+*.local.md
+NOTES.md
+TODO.local.md
+
+# ============================================
+# IDE & Editors
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+.project
+.pydevproject
+.settings/
+*.code-workspace
+
+# ============================================
+# Operating System
+# ============================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ============================================
+# Jupyter Notebooks
+# ============================================
+.ipynb_checkpoints/
+*.ipynb
+
+# ============================================
+# Testing
+# ============================================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# ============================================
+# Temporary Files
+# ============================================
+*.tmp
+*.bak
+*.swp
+*.log
+*~
+.cache/
+
+# ============================================
+# Large Binary Files
+# ============================================
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# ============================================
+# Sensitive Information
+# ============================================
+.env
+.env.local
+secrets/
+*.key
+*.pem
+
+# ============================================
+# Memory Bank (Local Notes Only)
+# ============================================
+.github/memory-bank/
+
+# ============================================
+# Private Instructions (Not for Git)
+# ============================================
+README_private/
+cleanup_repo.ps1
